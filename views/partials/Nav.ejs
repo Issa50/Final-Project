@@ -1,0 +1,67 @@
+<!-- NAVIGATION -->
+<nav class="navigation-main">
+  <!-- CONTAINER FLUID -->
+  <div class="container-fluid">
+    <!-- NAVIGATION HEADER -->
+    <div>
+      <button
+        type="button"
+        class="navbar-toggle"
+        data-toggle="collapse"
+        data-target="#navbar"
+      >
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </button>
+      <a class="navbar-brand" href="/"
+        ><img
+          class="img-responsive"
+          src="/assets/img/ISSA_COVER.jpg"
+          alt="ISSA MABUZA"
+          style="border-radius: 50px; width: 5%; height: 100%"
+        />
+        <span style="position: absolute; left: 7%; top: 30%">ISSA MABUZA</span>
+      </a>
+    </div>
+    <!-- /NAVIGATION HEADER -->
+
+    <!-- NAVBAR -->
+    <div id="navbar" class="navbar-collapse collapse">
+      <!-- MENU ITEMS LIST -->
+      <ul class="navigation-items nav navbar-nav navbar-right">
+        <li onclick="toggleClass(0)" class="navItem">
+          <a href="/">Home</a>
+        </li>
+        <li onclick="toggleClass(1)" class="navItem">
+          <a href="/About">About</a>
+        </li>
+        <li onclick="toggleClass(2)" class="navItem">
+          <a href="/Skills">Skills</a>
+        </li>
+        <li onclick="toggleClass(3)" class="navItem">
+          <a href="/Work">Work</a>
+        </li>
+        <li onclick="toggleClass(4)" class="navItem">
+          <a href="/Contact">Contact</a>
+        </li>
+      </ul>
+      <!-- /MENU ITEMS LIST -->
+    </div>
+    <!-- /NAVBAR -->
+  </div>
+  <!-- /CONTAINER FLUID -->
+</nav>
+<script>
+  console.log(window.location.href);
+  if (window.location.href === 'http://localhost:8080/') {
+    toggleClass(0);
+  } else if (window.location.href === 'http://localhost:8080/About') {
+    toggleClass(1);
+  }
+  function toggleClass(index) {
+    var elements = document.getElementsByClassName('navItem');
+    console.log(elements);
+    elements[index].classList.toggle('current');
+    console.log(index);
+  }
+</script>
+<!-- /NAVIGATION -->

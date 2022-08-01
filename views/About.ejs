@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('./partials/Head'); %>
+    <style>
+      img {
+        transition: transform 0.7s ease-in-out;
+      }
+      img:hover {
+        transform: rotate(360deg);
+      }
+      span {
+        padding: 5%;
+      }
+    </style>
+  </head>
+  <body class="container">
+    <main><%- include('./partials/Nav'); %></main>
+    <!-- ABOUT -->
+    <section id="about" class="white">
+      <!-- CONTAINER FLUID -->
+      <div class="container-fluid text-center">
+        <h3 class="headline scroll-animated-from-bottom">
+          I am graphic designer and Photoshop enthusiast
+        </h3>
+
+        <p class="subline scroll-animated-from-bottom">
+          I have a passion for Grapic Design and photoshop which I learn on my
+          own. I am constantly learning and upgrading my skills in this field. I
+          also love the performing arts, especially dramatic arts and dance
+          which I excelled at while I was at school. I won first prize for my
+          dance item at a National Arts competition called Zwakala, which was
+          for deaf learners. It is my goal to pursue my involvement in the field
+          of drama and dance and I am working hard to achieve this. I am skilled
+          in Sign Language which is used as the medium of instruction at V.N
+          Naik School for the Deaf and which I continue to use everyday due to
+          being hard of hearing.
+        </p>
+
+        <!-- COLUMN -->
+        <div class="col-sm-4 text-left about-item scroll-animated-from-bottom">
+          <img
+            class="img-responsive"
+            src="assets/img/about/ISSA-1.jpg"
+            alt="image"
+          />
+        </div>
+        <!-- /COLUMN -->
+
+        <!-- COLUMN -->
+        <div class="col-sm-4 text-left about-item scroll-animated-from-bottom">
+          <img
+            class="img-responsive"
+            src="/assets/img/about/ISSA-2.jpg"
+            alt="image"
+            style="height: 270px"
+          />
+          <!-- <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+            congue augue eget blandit congue.
+          </p> -->
+        </div>
+        <!-- /COLUMN -->
+
+        <!-- COLUMN -->
+        <div class="col-sm-4 text-left about-item scroll-animated-from-bottom">
+          <img
+            class="img-responsive"
+            src="/assets/img/about/ISSA-3.jpg"
+            alt="image"
+            style="height: 270px; width: 300px"
+          />
+          <!-- <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+            congue augue eget blandit congue.
+          </p> -->
+        </div>
+        <!-- /COLUMN -->
+        <video width="600" height="240" controls style="margin-top: 3%">
+          <source src="/assets/img/about/ISSA-4.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <main>
+          <div style="text-align: center">
+            <h2>Diploma in Software Developer</h2>
+          </div>
+          <main>
+            <div>
+              <ul>
+                <li>
+                  <span style="font-weight: bold">Birth Date:</span>
+                  <span>12 August 1995 </span>
+                </li>
+                <li>
+                  <span style="font-weight: bold; margin-left: -1%"
+                    >Phone:</span
+                  >
+                  <span style="margin-left: 4%">0746536208</span>
+                </li>
+                <li>
+                  <span style="font-weight: bold; margin-left: 16%"
+                    >Address:</span
+                  >
+                  <span>8 Skinner Str Hamberg Roodeooort 1724</span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <ul>
+                <li>
+                  <span style="font-weight: bold; margin-left: -3.5%"
+                    >Age:
+                  </span>
+                  <span style="margin-left: 10%">27</span>
+                </li>
+                <li>
+                  <span style="font-weight: bold; margin-left: 4%"
+                    >Email:
+                  </span>
+                  <span style="margin-left: 2%">Issamabuza@gmail.com</span>
+                </li>
+              </ul>
+            </div>
+          </main>
+        </main>
+      </div>
+      <!-- /CONTAINER FLUID -->
+    </section>
+    <!-- /ABOUT -->
+  </body>
+</html>
